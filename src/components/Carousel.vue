@@ -73,7 +73,6 @@ export default {
         left:0;
         z-index:3;
         width:300px;
-
         > img {
             width: 100%
         }
@@ -119,7 +118,8 @@ export default {
                 z-index:1;
             }
         
-        > img {      
+        > img {  
+            width:100vw;    
             height: 80vh;
             min-height:100%;
             position: relative;
