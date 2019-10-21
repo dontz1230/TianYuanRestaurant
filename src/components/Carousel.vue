@@ -66,6 +66,7 @@ export default {
         margin:0;
     }
 
+@media (min-width:768px) {
     .sticker01 {
         position: absolute;
         bottom:0;
@@ -145,61 +146,62 @@ export default {
     
         
     }
+}
 
-    @media (max-width:768px){
-        .slider-container {
-         height: 50vh; 
-        overflow: hidden;
-        width:100%;
-        background: #b6d679;
-    }
+@media (max-width:768px){
+    .slider-container {
+        height: 50vh; 
+    overflow: hidden;
+    width:100%;
+    background: #b6d679;
+}
 
-    .slide-mask {
-        overflow: hidden; 
-        height: 50vh;      
-        z-index:1; 
+.slide-mask {
+    overflow: hidden; 
+    height: 50vh;      
+    z-index:1; 
 
-        &::before {
-                content: '歡迎來到：田園美食屋';
-                font-size: 1.5rem;
-                width: 300px;
-                position: absolute;
-                text-align: center;
-                color:white;
-                text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.76);
-                top:50%;
-                right:calc(50vw - 150px);
-                z-index:1;
-            }
-        > img {   
-            transform: scale(1);
+    &::before {
+            content: '歡迎來到：田園美食屋';
+            font-size: 1.5rem;
+            width: 300px;
+            position: absolute;
+            text-align: center;
+            color:white;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.76);
+            top:50%;
+            right:calc(50vw - 150px);
+            z-index:1;
         }
+    > img {   
+        transform: scale(1);
     }
-    .slider {
-        overflow: hidden;
-        position: relative;
-         
-        height: 50vh;  
-        background-position: center;
-        background-size: cover!important;
-        background-repeat: no-repeat!important;
-        padding:0;
-        margin: auto;
+}
+.slider {
+    overflow: hidden;
+    position: relative;
+        
+    height: 50vh;  
+    background-position: center;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    padding:0;
+    margin: auto;
 
-        > .slider-content {
-            // writing-mode: vertical-lr;
-            font-size: 2rem;
-    }}
+    > .slider-content {
+        // writing-mode: vertical-lr;
+        font-size: 2rem;
+}}
 
-        .sticker01 {
-        left:-10vw;
+    .sticker01 {
+    left:-10vw;
+    width:50vw;
+}
+
+    .sticker02 {
         width:50vw;
     }
-
-        .sticker02 {
-            width:50vw;
-        }
-    }
+}
 
     
 </style>
