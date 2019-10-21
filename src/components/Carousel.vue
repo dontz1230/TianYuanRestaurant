@@ -104,6 +104,7 @@ export default {
         top:0;
         z-index:1;
         height: 80vh;
+        width:100vw;
         &::before {
                 content: '歡迎來到：田園美食屋';
                 font-size: 2rem;
